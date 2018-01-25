@@ -1,28 +1,14 @@
 import VueRouter from 'vue-router';
 
-import Example from './components/Example.vue';
-import Exampledos from './components/Exampledos.vue';
-import Layout from './components/Layout.vue';
+import Categories from './components/categories/Categories.vue';
 
 const router = new VueRouter({
-	routes: [
-		{
-			name: 'Exampledos',
-			path: '/exampledos',
-			component: Exampledos
-  },
-		{
-			name: 'Example',
-			path: '/example',
-			component: Example
-  },
-		{
-			name: 'Layout',
-			path: '/layout',
-			component: Layout
-  },
-  ]
-
+	routes: [{
+			name: 'Categories',
+			path: '/categories',
+			component: Categories
+		},
+	]
 });
 
 export default router;

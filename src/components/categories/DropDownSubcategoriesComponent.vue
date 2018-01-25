@@ -1,5 +1,4 @@
-<template>
-	<div>
+<template>	
 		<dl id="subcategorias">
 			<dt>
 				<label class="control-label">Sub Categorias</label>
@@ -7,13 +6,8 @@
 			<dd>
 				<multiselect :options="subCategories" track-by="id" label="name" selectLabel="Click para seleccionar" deselectLabel="Click para eliminar" :reset-after="false" @select="dispatchActionSubCategory"></multiselect>
 			</dd>
-		</dl>	
-		
-	</div>
-
+		</dl>
 </template>
-
-
 
 <script>
 	import Multiselect from 'vue-multiselect';	
@@ -33,13 +27,10 @@
 
 		methods: {
 			dispatchActionSubCategory(actionName) {
-				
+				console.log(actionName);
 			}
 		},
-
-		computed: {
-			
-		},
+		
 		mounted: function () {
 			console.log('SubCategories mounted.')			
 		}
