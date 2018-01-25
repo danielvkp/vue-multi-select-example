@@ -1,6 +1,7 @@
 # Vue Multi-Select Example!
 
 > A simple vue multi-select example using Vuex.
+> online at https://vue.triangulocreativove.com.ve/vue#/categories
 
 # install dependencies
 npm install
